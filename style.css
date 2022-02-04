@@ -1,0 +1,334 @@
+/* css reset*/
+*{
+    margin: 0;
+    padding: 0;
+
+}
+
+/* css variabel*/
+
+:root{
+    --navbar-hieght: 59px;
+}
+
+/* Navigation bar */
+#navbar{
+    display: flex;
+    align-items: center;
+
+}
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+}
+
+/* navigation bar: logo image */
+#logo{
+    margin: 10px 34px;
+
+}
+#logo img{
+    margin: 3px 5px;
+    height: 65px;
+}
+/* navigation bar: list item */
+#navbar{
+    position: relative;
+}
+
+#navbar ul{
+    display: flex;
+}
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+}
+#navbar ul li{
+    /* color: black; */
+    list-style: none;
+    font-size: 1.2rem;
+
+}
+#navbar ul li a{
+    color: white;
+    display: block;
+    padding: 3px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+#navbar ul li a:hover{
+    color: black;
+    background-color: white;
+    /* padding: 3px 22px;
+    border-radius: 20px;
+    text-decoration: none; */
+}
+
+/* home section */
+
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 90px 200px;
+    margin: 10px 0;
+    height: 320px;
+    justify-content: center;
+    align-items: center;
+}
+#home::before{
+    content: ""; 
+    position: absolute;
+    background: center / cover no-repeat url("../image/image1.png");
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;     
+    z-index: -1;
+    opacity: 0.8;
+    
+}
+#home h1{
+    color: rgb(0, 0, 0);
+    text-align: center;
+    
+
+}
+#home p{
+    color: rgb(0, 0, 0);
+    text-align: center;
+    font-size: 1.8rem;
+    
+}
+/* section menu */
+
+.menu-container{
+    background-color: rgb(209, 206, 202);
+    padding: 10px 0;
+    margin: 10px 0;
+}
+
+#menu{
+    margin: 30px;
+    display: flex;
+
+}
+
+#menu .box{
+    border: 0px solid brown;
+    padding: 35px;
+    margin: 15px;
+    border-radius: 23px;
+    background-color: rgb(235, 204, 164);
+}
+
+.box:hover{
+    box-shadow: 0 0 20px 0px rgba(0, 0,0, 0.2);
+}
+
+
+#menu .box img{
+    height: 120px;
+    margin: auto;
+    display: block;
+    padding: 20px;
+    
+}
+
+.btn{
+    padding: 0px 10px;
+    border: 0;
+    /* line-height: 2.5; */
+    color: #000000;
+    background-color: rgb(255, 255, 255);
+    border-radius: 9px;
+    font-size: 1.2rem;
+    margin: 10px;
+    text-align: center;
+    justify-content: center;
+
+}
+
+
+.btn:hover{
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
+}
+
+
+/* utility */
+.h-primary{
+    font-size: 2.8rem;
+    padding: 13px ;
+}
+
+.h-secoundary{
+    font-size: 1.8rem;
+    padding: 10px ;
+
+}
+
+/* button styled */
+.styled {
+    border: 0;
+    line-height: 2;
+    padding: 0px 9px;
+    font-size: 1.2rem;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    /* text-shadow: 1px 1px 1px #000; */
+    border-radius: 10px;
+    /* background-color: rgba(220, 0, 0, 1); */
+}
+
+.styled:hover{
+    color: white;
+    background-color:black;
+}
+
+.center{
+    text-align: center;
+}
+ 
+/* about us section */
+
+.about-us{
+    background-color: rgb(236, 175, 211);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding-top: 0px;
+    padding-bottom: 1px;
+    margin: 10px 0;
+}
+
+#about{
+    text-align: center;
+    padding: 15px;
+    margin: 30px;
+    display: block;
+    align-items: center;
+}
+
+#about p{
+    font-size: 1.3rem;
+}
+.row{
+    display: flex;
+}
+.gallery{
+    flex-basis: 31%;
+    border-radius: 10px;
+    margin-bottom: 2%;
+    margin-top: 2.5%;
+    text-align: center;
+}
+
+.gallery img{
+    width: 20px 0px;
+    height: 185px;
+    border-radius: 10px;
+}
+
+.gallery:hover img{
+    box-shadow: 0 0 20px 0px rgba(0, 0,0, 0.2);
+}
+
+/* rating and review */
+
+.testimonials{
+    width: 100%;
+    margin: 10px 0;
+    padding-top: 10px;
+    text-align: center;
+    background-color: wheat ;
+}
+
+.testimonial-col{
+    
+    flex-basis: 44%;
+    border-radius: 10px;
+    margin: 5%;
+    text-align: left;
+    background: rgba(223, 162, 238, 0.493);
+    padding: 25px;
+    cursor: pointer;
+    display: flex;
+
+}
+
+.testimonial-col p{
+    padding: o;
+}
+
+.testimonial-col h3{
+    margin-top: 15px;
+    text-align: left;
+}
+
+
+
+/* contact section */
+
+.contact{
+    margin: 10px 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),
+    url(../image/banner.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 9px;
+    text-align: center;
+    padding: 100px 0px;
+}
+
+.contact h1{
+    color: #fff;
+    margin-bottom: 40px;
+    padding: 0;
+}
+
+.footer{
+    /* align-items: center; */
+    /* justify-content: center; */
+    text-align: center;
+}
+
+
+.footer .fa{
+    margin:0 10px;
+    padding: 10px 0;
+    /* width: 100%; */
+    height: 100%;
+    cursor: pointer;
+    color: rgb(0, 0, 0);
+    /* align-items: center; */
+}
+
+.footer p{
+    color: rgb(0, 0, 0);
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
